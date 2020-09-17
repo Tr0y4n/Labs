@@ -52,11 +52,11 @@ def currency():
             "Украинская гривна": round(float(soup.find("CharCode", text = "UAH").find_next_sibling("Value").get_text().replace(',','.')) / 10, 5)})
 
 def main():
-    #arr = input("Enter the array for task 1: ").split(" ")
-    #dictify(arr)
-    #first_set = input("Введите первое множество для Жаккара: ").split(" ")
-    #second_set = input("Введите второе множество для Жаккара: ").split(" ")
-    #jaccard(first_set, second_set)
+    arr = input("Enter the array for task 1: ").split(" ")
+    dictify(arr)
+    first_set = input("Введите первое множество для Жаккара: ").split(" ")
+    second_set = input("Введите второе множество для Жаккара: ").split(" ")
+    jaccard(first_set, second_set)
     Json_to_csv()
     currency()
 
